@@ -18,47 +18,14 @@ const viewer = new Cesium.Viewer('cesiumContainer', {
 
 // viewer.extend(Cesium.viewerCesium3DTilesInspectorMixin);
 
-// const tileset = viewer.scene.primitives.add(
-//     await Cesium.Cesium3DTileset.fromUrl(
-//         "./tileset.json"
-//     ) 
-// );
+
 
 const tileset = viewer.scene.primitives.add(
     await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/homes/tileset.json"
+        "./tilesets/tileset.json"
     ) 
 );
 
-const citywall_tileset = viewer.scene.primitives.add(
-    await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/citywall/tileset.json"
-    ) 
-);
-
-const roads_tileset = viewer.scene.primitives.add(
-    await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/roads/tileset.json"
-    ) 
-);
-
-const agora_tileset = viewer.scene.primitives.add(
-    await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/agora/tileset.json"
-    ) 
-);
-
-const public_tileset = viewer.scene.primitives.add(
-    await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/publiczne_0/tileset.json"
-    ) 
-);
-
-const molo_tileset = viewer.scene.primitives.add(
-    await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/molo/tileset.json"
-    ) 
-);
 
 
 // viewer.zoomTo(tileset);
