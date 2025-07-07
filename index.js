@@ -20,9 +20,39 @@ const viewer = new Cesium.Viewer('cesiumContainer', {
 
 
 
+// const tileset = viewer.scene.primitives.add(
+//     await Cesium.Cesium3DTileset.fromUrl(
+//         "./tileset/tileset.json"
+//     ) 
+// );
+
 const tileset = viewer.scene.primitives.add(
     await Cesium.Cesium3DTileset.fromUrl(
-        "./tilesets/tileset.json"
+        "./tileset/citywalls/tileset.json"
+    ) 
+);
+
+const homes_tileset = viewer.scene.primitives.add(
+    await Cesium.Cesium3DTileset.fromUrl(
+        "./tileset/homes/tileset.json"
+    ) 
+);
+
+const agora_tileset = viewer.scene.primitives.add(
+    await Cesium.Cesium3DTileset.fromUrl(
+        "./tileset/agora/tileset.json"
+    ) 
+);
+
+const roads_tileset = viewer.scene.primitives.add(
+    await Cesium.Cesium3DTileset.fromUrl(
+        "./tileset/roads/tileset.json"
+    ) 
+);
+
+const public_tileset = viewer.scene.primitives.add(
+    await Cesium.Cesium3DTileset.fromUrl(
+        "./tileset/public/tileset.json",
     ) 
 );
 
